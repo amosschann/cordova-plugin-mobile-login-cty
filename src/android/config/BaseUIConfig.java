@@ -11,7 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.aliqin.mytel.AppUtils;
 import com.aliqin.mytel.Constant;
-import com.zhongzilian.chestnutapp.R;
+import com.huayu.quzhanyeapp.R;
 import com.mobile.auth.gatewayauth.PhoneNumberAuthHelper;
 
 import static com.aliqin.mytel.AppUtils.dp2px;

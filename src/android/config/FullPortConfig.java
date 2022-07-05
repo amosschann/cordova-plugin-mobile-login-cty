@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.aliqin.mytel.MobileLoginPlugin;
-import com.zhongzilian.chestnutapp.R;
+import com.huayu.quzhanyeapp.R;
 import com.mobile.auth.gatewayauth.AuthRegisterViewConfig;
 import com.mobile.auth.gatewayauth.AuthUIConfig;
 import com.mobile.auth.gatewayauth.AuthUIControlClickListener;

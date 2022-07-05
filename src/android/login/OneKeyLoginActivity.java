@@ -15,8 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.aliqin.mytel.MobileLoginPlugin;
-import com.zhongzilian.chestnutapp.BuildConfig;
-import com.zhongzilian.chestnutapp.R;
+import com.huayu.quzhanyeapp.BuildConfig;
+import com.huayu.quzhanyeapp.R;
 import com.aliqin.mytel.config.BaseUIConfig;
 import com.aliqin.mytel.uitls.ExecutorManager;
 import com.mobile.auth.gatewayauth.PhoneNumberAuthHelper;
