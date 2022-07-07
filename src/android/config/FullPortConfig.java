@@ -101,31 +101,31 @@ public class FullPortConfig extends BaseUIConfig {
             authPageOrientation = ActivityInfo.SCREEN_ORIENTATION_BEHIND;
         }
         mAuthHelper.setAuthUIConfig(new AuthUIConfig.Builder()
-                .setAppPrivacyOne("《隐私协议》", MobileLoginPlugin.myPrivacy_Web )
-                //.setAppPrivacyTwo("《百度》", "https://www.baidu.com")
-                .setAppPrivacyColor(Color.GRAY, Color.parseColor("#002E00"))
-                //隐藏默认切换其他登录方式
-                .setSwitchAccHidden(true)
-                //隐藏默认Toast
-                .setLogBtnToastHidden(true)
-                //沉浸式状态栏
-                .setNavColor(Color.parseColor("#01AD4A"))
-                .setStatusBarColor(Color.parseColor("#01AD4A"))
-                .setWebViewStatusBarColor(Color.parseColor("#01AD4A"))
+            .setAppPrivacyOne("《隐私协议》", MobileLoginPlugin.myPrivacy_Web )
+            //.setAppPrivacyTwo("《百度》", "https://www.baidu.com")
+            .setAppPrivacyColor(Color.GRAY, Color.parseColor("#EEBC57"))
+            //隐藏默认切换其他登录方式
+            .setSwitchAccHidden(true)
+            //隐藏默认Toast
+            .setLogBtnToastHidden(true)
+            //沉浸式状态栏
+            .setNavColor(Color.parseColor("#EEBC57"))
+            .setStatusBarColor(Color.parseColor("#EEBC57"))
+            .setWebViewStatusBarColor(Color.parseColor("#EEBC57"))
 
-                .setLightColor(false)
-                .setWebNavTextSizeDp(20)
-                //图片或者xml的传参方式为不包含后缀名的全称 需要文件需要放在drawable或drawable-xxx目录下 in_activity.xml, mytel_app_launcher.png
-                .setAuthPageActIn("in_activity", "out_activity")
-                .setAuthPageActOut("in_activity", "out_activity")
-                .setVendorPrivacyPrefix("《")
-                .setVendorPrivacySuffix("》")
-                //.setPageBackgroundPath("page_background_color")
-                .setLogoImgPath("mytel_app_launcher")
-                //一键登录按钮三种状态背景示例login_btn_bg.xml
-                .setLogBtnBackgroundPath("login_btn_bg")
-                .setScreenOrientation(authPageOrientation)
-                .create());
+            .setLightColor(false)
+            .setWebNavTextSizeDp(20)
+            //图片或者xml的传参方式为不包含后缀名的全称 需要文件需要放在drawable或drawable-xxx目录下 in_activity.xml, mytel_app_launcher.png
+            .setAuthPageActIn("in_activity", "out_activity")
+            .setAuthPageActOut("in_activity", "out_activity")
+            .setVendorPrivacyPrefix("《")
+            .setVendorPrivacySuffix("》")
+            //.setPageBackgroundPath("page_background_color")
+            .setLogoImgPath("mytel_app_launcher")
+            //一键登录按钮三种状态背景示例login_btn_bg.xml
+            .setLogBtnBackgroundPath("login_btn_bg")
+            .setScreenOrientation(authPageOrientation)
+            .create());
     }
 
 

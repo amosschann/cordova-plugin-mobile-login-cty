@@ -5,14 +5,14 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-//import android.support.annotation.Nullable;
+import android.support.annotation.Nullable;
 
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
 //import com.aliqin.mytel.MessageActivity;
-import androidx.annotation.Nullable;
+//import androidx.annotation.Nullable;
 
 import com.aliqin.mytel.MobileLoginPlugin;
 import com.huayu.quzhanyeapp.BuildConfig;
@@ -93,6 +93,7 @@ public class OneKeyLoginActivity extends Activity {
                         finish();
                     } else {
                         MobileLoginPlugin.callJS("0|一键登录失败切换到其他登录方式"); //主动回调cordova,返回JS
+                      finish();
                         //Toast.makeText(getApplicationContext(), "一键登录失败切换到其他登录方式", Toast.LENGTH_SHORT).show();
                         //Intent pIntent = new Intent(OneKeyLoginActivity.this, MessageActivity.class);
                         //startActivityForResult(pIntent, 1002);
@@ -178,6 +179,7 @@ public class OneKeyLoginActivity extends Activity {
                 finish();
             }
         }
+      finish();
     }
 
 
