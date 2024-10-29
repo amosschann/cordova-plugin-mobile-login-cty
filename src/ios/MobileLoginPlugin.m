@@ -189,7 +189,9 @@ static MobileLoginPlugin *selfplugin = nil;
             } else {
                 //NSLog(@"获取LoginToken或拉起授权页失败回调：%@", resultDic);
                 [[TXCommonHandler sharedInstance] cancelLoginVCAnimated:YES complete:nil];
-                [self sendCmd:  @"0|一键登录失败切换到其他登录方式"];
+                NSString *errorMsg = [NSString stringWithFormat:@"0|一键登录失败切换到其他登录方式，错误代码：%@", resultCode];
+                [self sendCmd:errorMsg];
+    }
   
             }
         }];
