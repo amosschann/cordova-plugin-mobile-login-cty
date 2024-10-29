@@ -68,11 +68,15 @@ static MobileLoginPlugin *selfplugin = nil;
 //        //NSLog(@"设置秘钥结果：%@", resultDic);
 //    }];
     
-
-    
-    pluginResult = [CDVPluginResult resultWithStatus: CDVCommandStatus_NO_RESULT];
-    [pluginResult setKeepCallbackAsBool:YES];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId: command.callbackId];
+    NSString *info = [command.arguments objectAtIndex:0];
+    NSLog(@"Setting Auth SDK Info: %@", info);
+    [[TXCommonHandler sharedInstance] setAuthSDKInfo:info complete:^(NSDictionary * _Nonnull resultDic) {
+        CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:resultDic];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }];
+    // pluginResult = [CDVPluginResult resultWithStatus: CDVCommandStatus_NO_RESULT];
+    // [pluginResult setKeepCallbackAsBool:YES];
+    // [self.commandDelegate sendPluginResult:pluginResult callbackId: command.callbackId];
 }
 
 
