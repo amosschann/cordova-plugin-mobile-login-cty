@@ -191,8 +191,6 @@ static MobileLoginPlugin *selfplugin = nil;
                 [[TXCommonHandler sharedInstance] cancelLoginVCAnimated:YES complete:nil];
                 NSString *errorMsg = [NSString stringWithFormat:@"0|一键登录失败切换到其他登录方式，错误代码：%@", resultCode];
                 [self sendCmd:errorMsg];
-    }
-  
             }
         }];
     //}
